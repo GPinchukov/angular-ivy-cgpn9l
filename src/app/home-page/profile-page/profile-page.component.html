@@ -1,0 +1,47 @@
+
+<div class="user_wrap">
+  <img class="user_pic" src="{{this.logserv.user.images[0].url}}" alt="pic">
+  <div class="user_info">
+    <p class="user_href">Profile</p>
+    <div class="user_name">{{this.logserv.user.display_name.toUpperCase() }}</div>
+    <p class="user_follow">Followers: {{this.logserv.user.followers.total}}</p>
+  </div>
+
+
+</div>
+<div class="pl_wrap">
+  <p class="pl_sign">Playlists:</p>
+  <div class="pl_cont">
+  <div class="card_wrap">
+
+<div class="card" *ngFor="let pl of this.playlists.playlists">
+  <a [routerLink]="['/playlist', pl.id]">
+  <div class="card_cont">
+  <img class="albums_cover" src="{{pl.images[0].url}}" alt="cover art">
+  <p class="pl_title">{{pl.name}}</p>
+  <p class="pl_desk">{{pl.description}}</p>
+</div>
+  </a>
+  </div>
+</div>
+  </div>
+  <p class="pl_sign">Albums:</p>
+    <div class="pl_cont">
+
+      <div class="card_wrap">
+
+        <div class="card" *ngFor="let pl of this.ddata">
+          <a [routerLink]="['/album', pl.album.id]">
+          <div class="card_cont">
+            <img class="albums_cover" src="{{pl.album.images[0].url}}" alt="cover art">
+            <p class="pl_title">{{pl.album.name}}</p>
+            <p class="pl_desk">{{pl.album.artists[0].name}}</p>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+<footer class="player">
+  <app-player></app-player>
+</footer>

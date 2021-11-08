@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  list-style: none;
+  color: #787878;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+li{
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
+li:hover {
+  color: white;
+  cursor: pointer;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.main{
+    margin-left: 160px;
+    font-size: 28px;
+}
+@media screen and (max-width:768px) {
+  .sidenav {
+    display: none;
+  }
+  .main{
+    margin-left: 0px;
+  }
+}

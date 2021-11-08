@@ -1,10 +1,15 @@
-import { Component, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
+import {LoginService} from "./home-page/services/login.service";
 
 @Component({
-  selector: 'my-app',
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+export class AppComponent {
+
+  constructor( public loserv: LoginService) {
+  }
+
+  title = 'my-app';
 }

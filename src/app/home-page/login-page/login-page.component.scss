@@ -1,0 +1,55 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #FFF;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+.button {
+  background-color: #1db954;
+  border: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem auto;
+  height: 3rem;
+  width: 12rem;
+  border-radius: 50px;
+  position: relative;
+  p{
+    color: white;
+    position: absolute;
+    top: 30%;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+.button:hover{
+  background-color: #1ed760;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 6rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+

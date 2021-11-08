@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+p{
+  color: #ffffff;
+}
+
+.user_pic{
+  border-radius: 50%;
+  object-fit: cover;
+  width: 17rem;
+  height: 17rem;
+  margin: 2.5rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.user_wrap{
+  display: flex;
+  width: 100%;
+  height: 25rem;
+  background: linear-gradient(rgba(19, 151, 182, 0.95), #106579);
+  flex-direction: row;
+  align-items: flex-end;
+}
+.user_name{
+  color: #ffffff;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  margin-left: -3px;
+  padding-bottom: 1rem;
+}
+.user_href{
+  color: #ffffff;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-bottom: 1rem;
+}
+
+.user_follow{
+  color: #ffffff;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: -1rem;
+}
+.user_info{
+  padding-bottom: 3rem;
+}
+
+.albums_cover{
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+}
+.pl_wrap{
+  background: linear-gradient(#0c3944, rgb(0, 0, 0));
+  padding-bottom: 3rem;
+}
+
+.pl_sign{
+  padding-top: 2.5rem;
+  margin-left: 90px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+.pl_cont{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.card{
+  margin-top: 20px;
+  margin-right: 1.5rem;
+  width: 160px;
+  background: #252525;
+  border-radius: 5px;
+  padding: 7px;
+}
+.card:hover{
+  background: #424242;
+}
+
+.card_wrap{
+  padding-left: 5%;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  .card_cont{
+    width: 160px;
+    margin: 1px auto;
+  }
+}
+.pl_title{
+  padding-top: 20px;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+.pl_desk{
+  padding-top: 9px;
+  color: #989898;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+}
+.player {
+  position: sticky;
+  bottom: 0;
+}
+@media screen and (max-width:768px) {
+  .card_wrap{
+    padding-left: 12%;
+  }
+}
+@media screen and (max-width:375px) {
+.user_pic{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+  .user_name{
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+  .user_href{
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+
+  .user_info{
+    padding-bottom: 19px;
+  }
+
+  .user_wrap{
+    height: 150px;
+  }
+  .card_wrap{
+    padding-left: 30%;
+  }
+
+  .card{
+    margin-top: 20px;
+    margin-right: 1rem;
+    width: 145px;
+    background: #252525;
+    border-radius: 5px;
+    padding: 7px;
+  }
+
+  .card_wrap{
+    padding-left: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    display: flex;
+    .card_cont{
+      width: 145px;
+      margin: 1px auto;
+    }
+  }
+
+  .pl_sign{
+    margin-left: 25px;
+  }
+}

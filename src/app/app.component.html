@@ -1,4 +1,12 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div class="sidenav">
+<img src="assets/spotylog.png" alt="logo">
+  <ul class="navbar">
+    <li [routerLink]="['/albums']">Albums</li>
+    <li [routerLink]="['/playlists']">Playlists</li>
+    <li [routerLink]="['/profile']">Profile</li>
+  </ul>
+</div>
+<div class="main">
+<router-outlet></router-outlet>
+
+</div>

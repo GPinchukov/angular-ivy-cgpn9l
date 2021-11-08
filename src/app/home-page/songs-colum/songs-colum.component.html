@@ -1,0 +1,24 @@
+<div>
+  <div class="column">
+    <div [ngStyle]="{'width': '400px'}">
+      <p># TITLE</p>
+    </div>
+    <div class="hider" [ngStyle]="{'width': '35px'}">TIME</div>
+
+  </div>
+  <hr>
+
+  <div  *ngFor="let song of this.albumServ.album_data.tracks.items; index as i">
+    <div class="line" (click)="playAudio(song.preview_url)">
+      <div class="song_name">
+        <p class="id_sog_line">{{i+1}}</p>
+        <img class="song_line_cover" src="{{this.albumServ.album_data.images[0].url}}" alt="IGOR">
+        <div class="line_name_text">
+          <p class="line_title">{{song.name}}</p>
+          <p class="line_author">{{song.artists[0].name}}</p>
+        </div>
+      </div>
+      <div class="line_more_info hider">{{song.duration_ms | date:'mm:ss'}}</div>
+    </div>
+  </div>
+</div>
